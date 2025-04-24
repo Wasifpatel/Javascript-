@@ -31,3 +31,32 @@ myfunc();
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+// ***************************************************************
+
+// Stack(primitive) , Heap(Non-primitive)
+
+// Stack me apko copy milta hai
+
+let myyoutubename = "wasifcodinig"
+let anothername = myyoutubename
+anothername = "andrew tate"
+console.log(myyoutubename);
+console.log(anothername);
+
+// heap me apko original value ka reference milta hai
+
+let userOne = {
+    name: "wasif",
+    password: 123
+}
+
+let userTwo = userOne
+
+userTwo.name = "siddesh"
+
+console.log(userOne.name);
+console.log(userTwo.name);
+
+
+
