@@ -33,6 +33,11 @@ console.log(this);
 // const addTwo = (num1, num2) => num1+num2  // Implicite return
 // const addTwo = (num1, num2) =>( num1+num2 ) // Implicite return
 const addTwo = (num1, num2) =>( {username : "wasif"} ) // Implicite return
+// const addTwo = function(num1, num2) {
+//     {
+//         username : "wasif"   //undefined
+//     }
+// }
 
 console.log(addTwo(3,4));
 

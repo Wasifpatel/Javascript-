@@ -29,12 +29,12 @@ one()
 
 // ******* two types of function declaration *****
 console.log(addOne(5));
-function addOne(num) {  
+function addOne(num) {  //Function declaration
     return num +1;
 }
 //Before running the code, JavaScript does something called the "Hoisting phase".
 
-// addTwo(5) // wrong
-const addTwo = function (num) {
+// console.log(addTwo(5)); // wrong
+const addTwo = function (num) {  // Function expression
     return num +2;
 }

@@ -1,12 +1,12 @@
 const myNums = [1,2,3]
 
-// const myTotal = myNums.reduce( function(accumulator , currval){
-//     console.log(`acc : ${accumulator} and curr : ${currval}`);
-//     return accumulator + currval;
-// },0)
+const myTotal = myNums.reduce( function(accumulator , currval){
+    console.log(`acc : ${accumulator} and curr : ${currval}`);
+    return accumulator + currval;
+},0)
 
 
-const myTotal = myNums.reduce( (acc, curr) =>acc+curr ,0 )
+// const myTotal = myNums.reduce( (acc, curr) =>acc+curr ,0 )
 
 console.log(myTotal);
 
