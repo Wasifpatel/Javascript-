@@ -31,3 +31,8 @@ for (const key in something) {
     console.log(key);
 }
 
+// | Loop Type  | Iterates Over | Use With           |
+// | ---------- | ------------- | ------------------ |
+// | `for...of` | Values        | Arrays, Maps, Sets |
+// | `for...in` | Keys/indexes  | Objects, Arrays    |
+

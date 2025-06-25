@@ -37,3 +37,11 @@ const myObject = {
 //     console.log(key, ": ", value);
     
 // }
+
+
+// Use for...of when:
+// You want to loop through values (not keys or indexes).
+
+// You're working with iterable things: arrays, strings, maps, sets, etc.
+
+// You want the ability to break, continue, or return.

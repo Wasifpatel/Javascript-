@@ -36,6 +36,12 @@ const myprice = clothes.reduce( (acc ,item) => acc + item.price, 0 )
   
 console.log(myprice);
 
+// accumulator: stores the running total or result
+
+// currentValue: the current item in the array
+
+// initialValue: starting value for the accumulator
+
 
 
 

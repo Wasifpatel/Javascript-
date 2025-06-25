@@ -1,3 +1,5 @@
+// The .forEach() method is used to execute a function once for each item in an array.
+
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach( function(item) {
