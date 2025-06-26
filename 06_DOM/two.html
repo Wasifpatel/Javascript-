@@ -11,9 +11,27 @@
         <div class="day">Tuesday</div>
         <div class="day">Wednesday</div>
         <div class="day">Thursday</div>
-    </div:parent>
+    </div>
 </body>
 <script>
+    const Something = document.querySelectorAll('.parent')
+    console.log(Something);
+    console.log(Something[0].children);
+    console.log(Something[0].children[0].innerHTML);
+    
+    for (let i = 0; i < Something[0].children.length; i++) {
+        console.log(Something[0].children[i].innerHTML)
+        
+    }
+    console.log(Something[0].firstElementChild);
+    console.log(Something[0].lastElementChild);
+
+    const dayone = document.querySelectorAll('.day')
+    console.log(dayone);
+    console.log(dayone[0].parentElement);
+    console.log(dayone[0].nextElementSibling);
+
+    console.log("NODES -",Something[0].childNodes)
     
 </script>
 </html>

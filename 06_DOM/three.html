@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creation of Element</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const chiku = document.createElement('div')
+    console.log(chiku);
+    chiku.className = "main"
+    chiku.id = Math.round(Math.random()*10)
+    // chiku.title = "chiku is variable"
+    chiku.setAttribute("title", "chiku is variable")
+    // chiku.innerText = "Consistency is the key to success"
+    const addText = document.createTextNode("Consistency is the key to success")
+    chiku.appendChild(addText)
+
+    document.body.appendChild(chiku)
+    chiku.style.backgroundColor = "green"
+</script>
+</html>
