@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async function</title>
+</head>
+<body>
+    <h1>I am a Fullstack Developer</h1>
+    <button type="submit" id="stop">Stop</button>
+</body>
+<script>
+    const text = document.querySelector('h1')
+    const changetext = setTimeout(()=>{
+        text.innerHTML = "I am positive about it"
+    },4000)
+
+    const button = document.querySelector('#stop')
+
+    button.addEventListener('click',(e)=>{
+        e.preventDefault
+        clearTimeout(changetext)
+        console.log('Stopped')
+    })
+</script>
+</html>
