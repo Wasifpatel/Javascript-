@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API call</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="card">
+    <img id="picture" src="" alt="Profile" style="width:100%">
+    <h1>INFO</h1>
+    <p><button>Get Data</button></p>
+</div>
+</body>
+<script>
+    const loadImage = document.querySelector('button')
+    const requestURL = "https://api.github.com/users/Wasifpatel"
+    const req = new XMLHttpRequest();
+    req.open('GET', requestURL)
+    req.send()
+    req.onreadystatechange = function(){
+        console.log(req.readyState)
+        if (req.readyState === 4) {
+            const data = JSON.parse(this.responseText); 
+            console.log(typeof data);
+            console.log(data.followers);
+            console.log(data.avatar_url);
+            loadImage.addEventListener('click',(e)=>{
+                document.getElementById('picture').src = data.avatar_url;
+                document.querySelector('.card h1').innerHTML = `Followers : ${data.followers}`
+            })
+        }
+    }
+    
+</script>
+</html>
